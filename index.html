@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitchula Sai Bhuvan | Portfolio</title>
+    <meta name="description" content="Portfolio of Chitchula Sai Bhuvan - Data Analytics and Machine Learning Specialist.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">CSB<span class="gradient-text">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero section reveal">
+            <div class="hero-content">
+                <h2 class="subtitle">Hi, I'm</h2>
+                <h1 class="title">Chitchula <br><span class="gradient-text">Sai Bhuvan</span></h1>
+                <p class="description">
+                    <strong>Data Analytics & Machine Learning Specialist.</strong> Building intelligent pipelines, agentic AI systems, and robust anomaly detection solutions to solve complex problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Featured Work</a>
+                    <a href="mailto:sbvn.skl@gmail.com" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sbvn/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Chitchula-Sai-Bhuvan" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:sbvn.skl@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+917396033410" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <!-- Profile Picture -->
+                    <img src="assets/profile.png" alt="Chitchula Sai Bhuvan" onerror="this.src='https://ui-avatars.com/api/?name=C+S+B&size=512&background=0D8ABC&color=fff'">
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section reveal">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Data Analytics and Machine Learning Intern</h3>
+                        <h4 class="gradient-text">Fluentgrid</h4>
+                        <span class="date">Aug 2025 – Dec 2025</span>
+                        <ul>
+                            <li>Built an end-to-end churn prediction pipeline covering data ingestion, cleaning, feature engineering, EDA, and supervised ML models to identify high-risk customers.</li>
+                            <li>Evaluated baseline and ensemble models using metrics such as ROC-AUC, precision-recall, and confusion matrix, addressing class imbalance and prioritizing recall.</li>
+                            <li>Applied model interpretability techniques including feature importance and SHAP analysis to explain predictions and uncover key drivers of churn.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section reveal">
+            <h2 class="section-title">Education</h2>
+            <div class="grid-2">
+                <div class="glass-card edu-card">
+                    <i class="fas fa-graduation-cap edu-icon"></i>
+                    <h3>M.Tech in CS & Engineering</h3>
+                    <h4>Amrita Vishwa Vidyapeetam</h4>
+                    <span class="date">Expected 2025 | CGPA: 7.9/10</span>
+                </div>
+                <div class="glass-card edu-card">
+                    <i class="fas fa-university edu-icon"></i>
+                    <h3>B.Tech in EEE</h3>
+                    <h4>Sagi Rama Krishnam Raju Engineering College</h4>
+                    <span class="date">Graduated 2024 | CGPA: 7.8/10</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="glass-card project-card group-hover">
+                    <div class="project-content">
+                        <h3>Agentic Bug Hunter</h3>
+                        <p>AI-Driven Code Bug Detection System using an MCP server. Analyzes source code automatically, detects potential bugs, and generates explainable diagnostic insights via modular AI agents.</p>
+                        <div class="tech-stack">
+                            <span>Agentic AI</span><span>MCP</span><span>Explainable AI</span><span>JSON/CSV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card group-hover">
+                    <div class="project-content">
+                        <h3>LLM Time Series Anomaly Detection</h3>
+                        <p>Hybrid anomaly detection system utilizing Isolation Forest and transformer-based models for processing multivariate sensor data. Features SHAP interpretability and a Streamlit dashboard with LLM explanations.</p>
+                        <div class="tech-stack">
+                            <span>Machine Learning</span><span>NLP</span><span>Pandas</span><span>Streamlit</span><span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card group-hover">
+                    <div class="project-content">
+                        <h3>MFA Fatigue Attack Mitigation</h3>
+                        <p>Adaptive authentication system mapping behavioral signals to assess login risk in real-time. Employs FastAPI and JWT blocking mechanisms to stop MFA & brute-force fatigue attacks.</p>
+                        <div class="tech-stack">
+                            <span>FastAPI</span><span>Security</span><span>JWT</span><span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section reveal">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category glass-card">
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span>Python</span><span>SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skill-tags">
+                        <span>Machine Learning</span><span>Data Analysis</span><span>NLP</span><span>LLMs</span><span>Agentic AI</span><span>Prompt Engineering</span><span>Fine-Tuning</span><span>RAG</span><span>NumPy</span><span>Pandas</span><span>Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Core Concepts & Math</h3>
+                    <div class="skill-tags">
+                        <span>DSA</span><span>OOP</span><span>DBMS</span><span>OS</span><span>Linear Algebra</span><span>Statistics</span><span>Calculus</span><span>Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications -->
+        <section id="certifications" class="section reveal">
+            <h2 class="section-title">Certifications & Honors</h2>
+            <ul class="cert-list glass-card">
+                <li><i class="fas fa-certificate gradient-text"></i> <span><strong>Microsoft Certified:</strong> Azure AI Fundamentals (AZ-900)</span></li>
+                <li><i class="fas fa-trophy gradient-text"></i> <span><strong>IIT Bombay:</strong> e-Yantra Competition Regional Finalist</span></li>
+                <li><i class="fas fa-medal gradient-text"></i> <span><strong>Accenture:</strong> Gold Level in iAspire Go for Gold program</span></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chitchula Sai Bhuvan. Designed with precision & style.</p>
+        <div class="footer-links">
+            <a href="https://github.com/Chitchula-Sai-Bhuvan" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sbvn/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
