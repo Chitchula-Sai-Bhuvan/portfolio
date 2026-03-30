@@ -5,6 +5,22 @@ const cursorOutline = document.querySelector('.cursor-outline');
 const heroImageWrapper = document.querySelector('.image-wrapper');
 const revealElements = document.querySelectorAll('.reveal');
 const typedTextSpan = document.querySelector(".typed-text");
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+// --- Mobile Menu Toggle ---
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+}
+
 
 // --- Performance Optimized Handlers ---
 let ticker = false;
